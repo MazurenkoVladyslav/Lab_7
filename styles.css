@@ -1,0 +1,33 @@
+.body{
+    background-color: rgb(119, 116, 116);
+} 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;  
+}
+
+.image-container {
+    width: 300px;  
+    height: auto;  
+    margin: 20px;  
+    overflow: hidden;  
+    position: relative;  
+}
+
+.image-container img {
+    width: 100%;  
+    display: block;  
+    filter: grayscale(100%);  
+    transition: filter 0.5s ease;  
+}
+
+.image-container:hover img {
+    filter: grayscale(0%) contrast(100%);  
+    transform: translateY(-5px);  
+}
+ 
+  
+
+ 
+ 
